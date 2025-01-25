@@ -1,0 +1,31 @@
+model_selection:
+  options:
+    - bert-base-uncased
+    - gpt2
+    - distilbert-base-uncased
+    - t5-small
+  default: bert-base-uncased
+
+quantization:
+  techniques:
+    - dynamic
+    - static
+    - quantization_aware_training
+
+evaluation:
+  metrics:
+    - memory_usage
+    - inference_speed
+    - accuracy
+
+report:
+  output_format: pdf
+  include_details: true
+
+logging:
+  level: info
+  file: quantization_pipeline.log
+
+resources:
+  memory_limit: 4096MB
+  timeout: 300s

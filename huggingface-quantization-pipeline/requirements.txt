@@ -1,0 +1,11 @@
+torch
+transformers
+datasets
+numpy
+pandas
+scipy
+matplotlib
+pyyaml
+torchvision
+onnx
+onnxruntime
